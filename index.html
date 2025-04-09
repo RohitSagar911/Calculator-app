@@ -1,1 +1,37 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculator</title>
+  <link rel="stylesheet" href="styled.css" />
+</head>
+<body>
+  <div id="container">
+    <input type="text" name="number" id="display" readonly />
+    <div id="keycont">
+      <button class="keys" onclick="appendToDisplay('7')">7</button>
+      <button class="keys" onclick="appendToDisplay('8')">8</button>
+      <button class="keys" onclick="appendToDisplay('9')">9</button>
+      <button class="inp" onclick="appendToDisplay('+')">+</button>
+      <button class="keys" onclick="appendToDisplay('6')">6</button>
+      <button class="keys" onclick="appendToDisplay('5')">5</button>
+      <button class="keys" onclick="appendToDisplay('4')">4</button>
+      <button class="inp" onclick="appendToDisplay('-')">-</button>
+      <button class="keys" onclick="appendToDisplay('3')">3</button>
+      <button class="keys" onclick="appendToDisplay('2')">2</button>
+      <button class="keys" onclick="appendToDisplay('1')">1</button>
+      <button class="inp" onclick="appendToDisplay('/')">/</button>
+      <button class="inp" onclick="appendToDisplay('.')">.</button>
+      <button class="keys" onclick="appendToDisplay('0')">0</button>
+      <button class="inp" onclick="appendToDisplay('*')">*</button>
+      <button class="inp" onclick="calculate()">=</button>
+      <button class="inp" onclick="clearDisplay()">C</button>
+    </div>
+  </div>
+
+  <script src="intex.js"></script>
+</body>
+</html>
+
